@@ -1,0 +1,9 @@
+- Function calling itself directly or indirectly is called recursion.
+- A recursive function should have these two things
+	- Base Case
+	- Recursive Relation
+- In addition, it can also have a processing part.
+- In recursion, 
+	- where recursive call is after processing is called **tail recursion**.
+	- where recursive call is before processing is called **head recursion**.
+- 

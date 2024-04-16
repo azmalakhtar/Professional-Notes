@@ -1,0 +1,184 @@
+{
+  "main": {
+    "id": "e78b790c93fc667e",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a3ca5f7aad186d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "029b0174f47c930f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Literature Notes/40 Harsh Truths I Know at 40 but Wish I Knew at 20.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b769e19517c5027a",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e75e81f961de5ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "afb0d71c2f2a0e9a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "caa0c544bc08268d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ed97d3d6e5eb8c14",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "543f6a9f9921fc3b",
+    "type": "split",
+    "children": [
+      {
+        "id": "2cce4bba73252229",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11389a8b1a2e6a9f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Literature Notes/40 Harsh Truths I Know at 40 but Wish I Knew at 20.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f4c320c66617802a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Literature Notes/40 Harsh Truths I Know at 40 but Wish I Knew at 20.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "eba4f03bab199458",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5f0534bedcdfd554",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Literature Notes/40 Harsh Truths I Know at 40 but Wish I Knew at 20.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "029b0174f47c930f",
+  "lastOpenFiles": [
+    "Atlas/Mark Manson.md",
+    "Literature Notes/The Art of Loving.md",
+    "Atlas/Erich Fromm.md",
+    "Literature Notes/What Everyone Gets Wrong About Goals.md",
+    "Fleeting Notes/Impact of Internet on Education System.md",
+    "Fleeting Notes/Islam is based on Kant's Moral Philosophy.md",
+    "Literature Notes/Activity & Fragment Lifecycle.md",
+    "Atlas/Android Development Kotlin Course Udacity.md",
+    "Literature Notes/40 Harsh Truths I Know at 40 but Wish I Knew at 20.md",
+    "Literature Notes/How to Accomplish Far More While Working Less (ft. Cal Newport).md",
+    "Fleeting Notes/6 Things to Stop Doing in 2024 for a Better Life.md",
+    "Literature Notes/Scientist REVEALS Shocking Sugar Research That Changes EVERYTHING (Hacks That HEAL!) Glucose Goddess.md",
+    "Literature Notes/Lecture 6 Threads.md",
+    "Literature Notes/Lecture 2 Process Creation.md",
+    "Literature Notes/Lecture 1 What is OS and Why we need it?.md",
+    "Atlas/Operating System Mindmatrix.md",
+    "Literature Notes/4 Threads & Concurrency.md",
+    "Literature Notes/The Psychology of The Man-Child (Puer Aeternus).md",
+    "Atlas/Eternalised.md",
+    "Literature Notes/Lecture 7 User Level & Kernel Level Threads.md",
+    "Literature Notes/Lecture 5 System Call Execution.md",
+    "Literature Notes/Lecture 4 exec & System Calls.md",
+    "Literature Notes/Lecture 3 fork System Call Continued.md",
+    "Literature Notes/1 Introduction.md",
+    "Atlas/Operating System Concepts Galvin.md",
+    "Literature Notes/Lecture 31 Learning Recursion the Best Way.md",
+    "Atlas",
+    "Fleeting Notes",
+    "Atomic Notes",
+    "Literature Notes",
+    "templates"
+  ]
+}
