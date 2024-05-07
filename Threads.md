@@ -1,5 +1,5 @@
 domain: [[Computer Science]]
-course: [[Operating System Mindmatrix]]
+course: [[Atlas/Operating System Mindmatrix]]
 teacher:
 date: 2024-03-21
 time: 09:51
