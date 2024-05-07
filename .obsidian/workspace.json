@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System Call Execution.md",
+                "file": "Operating System Mindmatrix.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System Call Execution.md",
+                "file": "Operating System Mindmatrix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "System Call Execution.md",
+                "file": "Operating System Mindmatrix.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Call Execution.md"
+                "file": "Operating System Mindmatrix.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "c681fd0072bc36a7",
   "lastOpenFiles": [
+    "System Call Execution.md",
     "Operating System Mindmatrix.md",
     "Welcome - Azmal.md",
     "User level & Kernel level Threads, PYQs.md",
@@ -163,7 +164,6 @@
     "Mixed CPU & IO Scheduling, Multilevel Queue Scheduling.md",
     "LRTF, HRRN, Priority Scheduling Algorithms.md",
     "Round Robin, LJF & LRTF, HRRN Scheduling.md",
-    "System Call Execution.md",
     "exec, System calls.md",
     "fork System Call.md",
     "fork() System Call.md",
