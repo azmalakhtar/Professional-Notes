@@ -4,7 +4,7 @@
 3. [[fork System Call]]
 4. [[exec, System calls]]
 5. [[System Call Execution]]
-6. [[Threads]]
+6. [Threads](/Threads.md)
 7. [[User level & Kernel level Threads, PYQs]]
 > Topic Test-1 || Threads & System Calls
 

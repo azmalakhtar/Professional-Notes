@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "What is OS and Why we need it?.md",
-                "mode": "preview",
+                "file": "Threads.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "What is OS and Why we need it?.md",
+                "file": "Threads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "What is OS and Why we need it?.md",
+                "file": "Threads.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "What is OS and Why we need it?.md"
+                "file": "Threads.md"
               }
             }
           }
@@ -149,12 +149,12 @@
   "active": "c681fd0072bc36a7",
   "lastOpenFiles": [
     "Operating System Mindmatrix.md",
+    "What is OS and Why we need it?.md",
     "Android Development.md",
     "Data Structures & Algorithms Love Babbar.md",
     "Welcome - Azmal.md",
     "SJF & SRTF CPU Scheduling Algorithms.md",
     "CPU Scheduling Algorithms, FCFS.md",
-    "What is OS and Why we need it?.md",
     "CPU Scheduling Algorithms,FCFS.md",
     "Multilevel Queue Scheduling, Topic Test-1 Solutions Discussion.md",
     "Process States Diagram, Types of Schedulers.md",
