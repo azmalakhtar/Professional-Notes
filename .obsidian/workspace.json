@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Threads.md",
+                "file": "System Call Execution.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Threads.md",
+                "file": "System Call Execution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Threads.md",
+                "file": "System Call Execution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Threads.md"
+                "file": "System Call Execution.md"
               }
             }
           }
@@ -149,10 +149,12 @@
   "active": "c681fd0072bc36a7",
   "lastOpenFiles": [
     "Operating System Mindmatrix.md",
+    "Welcome - Azmal.md",
+    "User level & Kernel level Threads, PYQs.md",
+    "Threads.md",
     "What is OS and Why we need it?.md",
     "Android Development.md",
     "Data Structures & Algorithms Love Babbar.md",
-    "Welcome - Azmal.md",
     "SJF & SRTF CPU Scheduling Algorithms.md",
     "CPU Scheduling Algorithms, FCFS.md",
     "CPU Scheduling Algorithms,FCFS.md",
@@ -161,8 +163,6 @@
     "Mixed CPU & IO Scheduling, Multilevel Queue Scheduling.md",
     "LRTF, HRRN, Priority Scheduling Algorithms.md",
     "Round Robin, LJF & LRTF, HRRN Scheduling.md",
-    "User level & Kernel level Threads, PYQs.md",
-    "Threads.md",
     "System Call Execution.md",
     "exec, System calls.md",
     "fork System Call.md",
