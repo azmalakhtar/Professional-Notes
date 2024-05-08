@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Playground.md",
+                "file": "Inter Process Communication, Need of Synchronization.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Playground.md",
+                "file": "Inter Process Communication, Need of Synchronization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Playground.md",
+                "file": "Inter Process Communication, Need of Synchronization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Playground.md"
+                "file": "Inter Process Communication, Need of Synchronization.md"
               }
             }
           }
@@ -148,9 +148,9 @@
   },
   "active": "deb42b7056608dd4",
   "lastOpenFiles": [
+    "Playground.md",
     "OOPs Concepts in C++.md",
     "Data Structures & Algorithms Love Babbar.md",
-    "Playground.md",
     "Inter Process Communication, Need of Synchronization.md",
     "Attachments/too-much-milk-os.png",
     "Attachments/pipes-ipc-os.webp",

@@ -10,7 +10,7 @@
 	- Message Passing
 	- Pipes
 ### Shared Memory
-![message-passing-ipc-os](message-passing-ipc-os.webp)
+![message-passing-ipc-os](Attachments/message-passing-ipc-os.webp)
 - In the shared-memory model, a region of memory that is shared by cooperating processes is established.
 - Processes can then exchange information by reading and writing data to the shared region.
 - Shared memory is created in the user space.
@@ -68,7 +68,7 @@ T4: producer execute count = r1 {count = 6}
 T5: consumer execute count = r2 {count = 4}
 
 - This leads to incorrect answer 4. If we executed T5 before T4, then the answer will be 6.
-> [!Definition]
+> [!Note]
 > A situation where several processes access and manipulate the same data concurrently and the outcome of the execution depends on the particular order in which the access takes place is called a **race condition**.
 
 
