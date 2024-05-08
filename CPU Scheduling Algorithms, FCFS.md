@@ -1,10 +1,3 @@
-domain: 
-course: [[Atlas/Operating System Mindmatrix]]
-teacher:
-date: 2024-04-22
-time: 16:42
-status: #unprocessed
-
 # Lecture 9 CPU Scheduling Algortihms
 ## Scheduling Algorithms
 ### Some goals of scheduling algorithms

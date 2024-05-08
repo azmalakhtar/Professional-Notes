@@ -9,7 +9,7 @@
 > Topic Test-1 || Threads & System Calls
 
 8. [[Process States Diagram, Types of Schedulers]]
-9. [[CPU Scheduling Algorithms, FCFS]]
+9. [CPU Scheduling Algorithms, FCFS](CPU%20Scheduling%20Algorithms,%20FCFS.md)
 10. [[SJF & SRTF CPU Scheduling Algorithms]]
 11. [[Round Robin, LJF & LRTF, HRRN Scheduling]]
 12. [[LRTF, HRRN, Priority Scheduling Algorithms]]
@@ -18,7 +18,7 @@
 > Topic Test-2, PSTD, CPU & I/O Scheduling
 
 ## Process Synchorization
-15. [[Inter Process Communication, Need of Synchronization]]
+15. [Inter Process Communication, Need of Synchronization](Inter%20Process%20Communication,%20Need%20of%20Synchronization.md)
 16. [[Critical Section Solution Requirements]]
 17. [[Critical Section Questions, PYQ]]
 18. [[Critical Section PYQs, Petersons Solution & Hardware Solutions]]
