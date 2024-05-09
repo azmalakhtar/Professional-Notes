@@ -42,7 +42,7 @@
 - Messages are read in the order they are written.
 - For both processes to be able to read and write simultaneously, two pipes are necessary.
 
-## Synchronization
+## Need of Synchronization
 ![too-much-milk-os](too-much-milk-os.png)
 - Without synchronization, the processes leads to inconsistencies.
 ### Race Condition

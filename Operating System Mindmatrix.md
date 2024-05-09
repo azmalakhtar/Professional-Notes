@@ -19,7 +19,7 @@
 
 ## Process Synchorization
 15. [Inter Process Communication, Need of Synchronization](Inter%20Process%20Communication,%20Need%20of%20Synchronization.md)
-16. [[Critical Section Solution Requirements]]
+16. [Critical Section Solution Requirements](Critical%20Section%20Solution%20Requirements.md)
 17. [[Critical Section Questions, PYQ]]
 18. [[Critical Section PYQs, Petersons Solution & Hardware Solutions]]
 19. [[Atomic Hardware Solutions]]

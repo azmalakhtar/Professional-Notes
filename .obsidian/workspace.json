@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inter Process Communication, Need of Synchronization.md",
-                "mode": "source",
+                "file": "Critical Section Solution Requirements.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:Opera",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "543f6a9f9921fc3b",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inter Process Communication, Need of Synchronization.md",
+                "file": "Critical Section Solution Requirements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inter Process Communication, Need of Synchronization.md",
+                "file": "Critical Section Solution Requirements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inter Process Communication, Need of Synchronization.md"
+                "file": "Critical Section Solution Requirements.md"
               }
             }
           }
@@ -148,15 +149,16 @@
   },
   "active": "deb42b7056608dd4",
   "lastOpenFiles": [
+    "Operating System Mindmatrix.md",
+    "Inter Process Communication, Need of Synchronization.md",
+    "Critical Section Solution Requirements.md",
     "Playground.md",
     "OOPs Concepts in C++.md",
     "Data Structures & Algorithms Love Babbar.md",
-    "Inter Process Communication, Need of Synchronization.md",
     "Attachments/too-much-milk-os.png",
     "Attachments/pipes-ipc-os.webp",
     "Attachments/shared-memory-ipc-os.webp",
     "Attachments/message-passing-ipc-os.webp",
-    "Operating System Mindmatrix.md",
     "Threads.md",
     "Process Creation.md",
     "Android Development.md",
@@ -177,7 +179,6 @@
     "fork System Call.md",
     "fork() System Call.md",
     "Literature Notes/1 Introduction.md",
-    "Fleeting Notes/6 Things to Stop Doing in 2024 for a Better Life.md",
     "Attachments/diagram-2.svg",
     "Attachments",
     "Untitled Folder",
