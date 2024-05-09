@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Critical Section Solution Requirements.md",
-                "mode": "preview",
+                "file": "Playground.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "543f6a9f9921fc3b",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Critical Section Solution Requirements.md",
+                "file": "Playground.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Critical Section Solution Requirements.md",
+                "file": "Playground.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Critical Section Solution Requirements.md"
+                "file": "Playground.md"
               }
             }
           }
@@ -149,9 +148,9 @@
   },
   "active": "deb42b7056608dd4",
   "lastOpenFiles": [
+    "Critical Section Solution Requirements.md",
     "Operating System Mindmatrix.md",
     "Inter Process Communication, Need of Synchronization.md",
-    "Critical Section Solution Requirements.md",
     "Playground.md",
     "OOPs Concepts in C++.md",
     "Data Structures & Algorithms Love Babbar.md",
