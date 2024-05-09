@@ -30,4 +30,4 @@ This ==has a highlight== in it.
 
 [Threads](Threads.md)
 
-![wallpaperflare.com_wallpaper](wallpaperflare.com_wallpaper.jpg)
+[App Architecture (UI Layer)](Literature%20Notes/App%20Architecture%20(UI%20Layer).md)

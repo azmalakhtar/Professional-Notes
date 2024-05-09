@@ -26,7 +26,7 @@
 	- Is is in the physical memory(RAM) but it is neither present in the stack nor in the heap of a process. So, it is created separately.
 
 ### Message Passing
-![message-passing-ipc-os](message-passing-ipc-os.webp)
+![message-passing-ipc-os](Attachments/message-passing-ipc-os.webp)
 - Message passing is useful for exchanging smaller amounts of data, because no conflicts need be avoided. It is also easier to implement in a distributed system than shared memory.
 - It provides a mechanism to allow processes to communicate and to synchronize their actions without sharing the same address space.
 - A message-passing facility provides at least two operations: `sent(message)` & `receive(message)`.
@@ -37,13 +37,13 @@
 - SM can be faster than MP since MP system are typically implemented using system calls and thus require more time-consuming task of kernel intervention.
 - In SM systems, system calls are required only to establish SM regions. Once shared memory is established, all accesses are treated as routine memory accesses, and no assistance from the kernel is required.
 ### Pipes
-![pipes-ipc-os](pipes-ipc-os.webp)
+![pipes-ipc-os](Attachments/pipes-ipc-os.webp)
 - A pipe is a link between two processes. One process writes into one end of the pipe & another process reads out of the other end.
 - Messages are read in the order they are written.
 - For both processes to be able to read and write simultaneously, two pipes are necessary.
 
 ## Need of Synchronization
-![too-much-milk-os](too-much-milk-os.png)
+![too-much-milk-os](Attachments/too-much-milk-os.png)
 - Without synchronization, the processes leads to inconsistencies.
 ### Race Condition
 - Let's say we have two different processes, named producer(P) & consumer(C).
