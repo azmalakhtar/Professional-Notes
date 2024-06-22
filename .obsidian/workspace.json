@@ -4,22 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "624cc8ac42d0a3f2",
+        "id": "ca538d1079d463c3",
         "type": "tabs",
         "children": [
           {
-            "id": "deb42b7056608dd4",
+            "id": "9cfe5507d5f80db7",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "c14997652fa1a459",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inter Process Communication, Need of Synchronization.md",
-                "mode": "source",
+                "file": "Atomic Kotlin.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +84,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "543f6a9f9921fc3b",
@@ -85,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inter Process Communication, Need of Synchronization.md",
+                "file": "Atomic Kotlin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inter Process Communication, Need of Synchronization.md",
+                "file": "Atomic Kotlin.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inter Process Communication, Need of Synchronization.md"
+                "file": "Atomic Kotlin.md"
               }
             }
           }
@@ -146,38 +162,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "deb42b7056608dd4",
+  "active": "c14997652fa1a459",
   "lastOpenFiles": [
-    "Operating System Mindmatrix.md",
-    "Critical Section Solution Requirements.md",
-    "Inter Process Communication, Need of Synchronization.md",
-    "Playground.md",
+    "Nullable Types.md",
+    "Atomic Kotlin.md",
+    "Destructuring Declarations.md",
+    "Data Classes.md",
+    "Home.md",
+    "Enumerations.md",
     "OOPs Concepts in C++.md",
+    "when Expressions.md",
+    "Overloading.md",
+    "Named & Default Arguments.md",
+    "Extension Functions.md",
     "Data Structures & Algorithms Love Babbar.md",
+    "Operating System Mindmatrix.md",
+    "Android Development Roadmap.md",
+    "Android Development.md",
+    "Calculator App.md",
+    "Android Project.md",
+    "Resources.md",
+    "XYZ.md",
+    "Literature Notes/App Architecture (UI Layer).md",
+    "Literature Notes/Activity & Fragment Lifecycle.md",
+    "Literature Notes/The Art of Loving.md",
+    "Literature Notes/How to Accomplish Far More While Working Less (ft. Cal Newport).md",
+    "Literature Notes/Feeling Good The New Mood Therapy Revised and Updated.md",
+    "fork System Call.md",
+    "Critical Section Solutions, PYQ.md",
     "Attachments/too-much-milk-os.png",
     "Attachments/pipes-ipc-os.webp",
     "Attachments/shared-memory-ipc-os.webp",
     "Attachments/message-passing-ipc-os.webp",
-    "Threads.md",
-    "Process Creation.md",
-    "Android Development.md",
-    "What is OS and Why we need it?.md",
-    "Welcome - Azmal.md",
-    "CPU Scheduling Algorithms, FCFS.md",
-    "Atlas/Operating System Mindmatrix.md",
-    "System Call Execution.md",
-    "User level & Kernel level Threads, PYQs.md",
-    "SJF & SRTF CPU Scheduling Algorithms.md",
-    "CPU Scheduling Algorithms,FCFS.md",
-    "Multilevel Queue Scheduling, Topic Test-1 Solutions Discussion.md",
-    "Process States Diagram, Types of Schedulers.md",
-    "Mixed CPU & IO Scheduling, Multilevel Queue Scheduling.md",
-    "LRTF, HRRN, Priority Scheduling Algorithms.md",
-    "Round Robin, LJF & LRTF, HRRN Scheduling.md",
-    "exec, System calls.md",
-    "fork System Call.md",
-    "fork() System Call.md",
-    "Literature Notes/1 Introduction.md",
     "Attachments/diagram-2.svg",
     "Attachments",
     "Untitled Folder",

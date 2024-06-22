@@ -1,7 +1,7 @@
 {
   "accentColor": "",
-  "cssTheme": "Minimal",
+  "cssTheme": "Things",
   "interfaceFontFamily": "Mononoki Nerd Font",
-  "textFontFamily": "Calibri",
-  "baseFontSize": 17
+  "textFontFamily": "Noto Sans,Calibri",
+  "baseFontSize": 16
 }
