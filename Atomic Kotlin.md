@@ -4,15 +4,15 @@
 - [Overloading](Overloading.md)
 - [when Expressions](when%20Expressions.md)
 - [Enumerations](Enumerations.md)
-- [Data Classes](Data%20Classes.md) 
+- [Data Classes Atomic](Data%20Classes%20Atomic.md) 
 - [Destructuring Declarations](Destructuring%20Declarations.md) 
 - [Nullable Types](Nullable%20Types.md) 
-- Safe Calls & the Elvis Operator
-- Non-Null Assertions
-- Extensions for Nullable Types
-- Introduction to Generics
-- Extension Properties
-- break & continue
+- [Safe Calls & the Elvis Operator](Safe%20Calls%20&%20the%20Elvis%20Operator.md) 
+- [Non Null Assertions](Non%20Null%20Assertions.md)
+- [Extensions for Nullable Types](Extensions%20for%20Nullable%20Types.md) 
+- [Introduction to Generics](Introduction%20to%20Generics.md) 
+- [Extension Properties](Extension%20Properties.md)
+- [break & continue](break%20&%20continue.md)
 
 ## Section IV: Functional Programming
 - Lambdas
@@ -28,7 +28,7 @@
 - Recursion
 
 ## Section V: Object-Oriented Programming
-- Interfaces
+- [Interfaces - Atomic Kotlin](Interfaces%20-%20Atomic%20Kotlin.md)
 - Complex Constructors
 - Secondary Constructors
 - Inheritance

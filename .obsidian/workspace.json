@@ -22,19 +22,31 @@
             }
           },
           {
-            "id": "c14997652fa1a459",
+            "id": "3e26ff1acd8c9122",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atomic Kotlin.md",
+                "file": "Kotlin Language Documentation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7dd0a43415a5a1e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sealed classes and interfaces.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atomic Kotlin.md",
+                "file": "Sealed classes and interfaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Atomic Kotlin.md",
+                "file": "Sealed classes and interfaces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -141,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Atomic Kotlin.md"
+                "file": "Sealed classes and interfaces.md"
               }
             }
           }
@@ -162,34 +174,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c14997652fa1a459",
+  "active": "7dd0a43415a5a1e6",
   "lastOpenFiles": [
-    "Nullable Types.md",
-    "Atomic Kotlin.md",
-    "Destructuring Declarations.md",
-    "Data Classes.md",
+    "Kotlin Language Documentation.md",
+    "Sealed classes and interfaces.md",
     "Home.md",
-    "Enumerations.md",
-    "OOPs Concepts in C++.md",
-    "when Expressions.md",
-    "Overloading.md",
-    "Named & Default Arguments.md",
-    "Extension Functions.md",
+    "Data classes.md",
+    "Data Classes Atomic.md",
     "Data Structures & Algorithms Love Babbar.md",
-    "Operating System Mindmatrix.md",
+    "4 Pillars of OOPs Concept - Inheritance, Polymorphism, Encapsulation & Abstraction.md",
+    "Extensions.md",
+    "Visibility modifiers.md",
+    "Functional (SAM) interfaces.md",
+    "Interfaces.md",
+    "Properties.md",
+    "Interfaces - Atomic Kotlin.md",
+    "Disabling Interrupts.md",
+    "Peterson's Solution.md",
+    "Attachments/peterson-solution-reorder.png",
+    "Inheritance.md",
+    "Classes.md",
+    "Exceptions.md",
+    "Atomic Kotlin.md",
+    "Untitled.md",
     "Android Development Roadmap.md",
-    "Android Development.md",
-    "Calculator App.md",
-    "Android Project.md",
-    "Resources.md",
-    "XYZ.md",
-    "Literature Notes/App Architecture (UI Layer).md",
-    "Literature Notes/Activity & Fragment Lifecycle.md",
-    "Literature Notes/The Art of Loving.md",
-    "Literature Notes/How to Accomplish Far More While Working Less (ft. Cal Newport).md",
-    "Literature Notes/Feeling Good The New Mood Therapy Revised and Updated.md",
-    "fork System Call.md",
-    "Critical Section Solutions, PYQ.md",
+    "break & continue.md",
+    "Extension Properties.md",
+    "Introduction to Generics.md",
+    "Extensions for Nullable Types.md",
+    "Operating System Mindmatrix.md",
     "Attachments/too-much-milk-os.png",
     "Attachments/pipes-ipc-os.webp",
     "Attachments/shared-memory-ipc-os.webp",
