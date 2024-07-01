@@ -21,14 +21,14 @@
 	- [Functional (SAM) interfaces](Functional%20(SAM)%20interfaces.md) 
 	- [Visibility modifiers](Visibility%20modifiers.md) 
 	- [Extensions](Extensions.md)
-	- Data Classes
-	- Sealed classes and interfaces
-	- Generics: in, out, where
-	- Nested and inner classes
-	- Enum classes
-	- Inline value classes
-	- Object expressions and declarations
-	- Delegation
+	- [Data classes](Data%20classes.md) 
+	- [Sealed classes and interfaces](Sealed%20classes%20and%20interfaces.md)
+	- [Generics in, out, where](Generics%20in,%20out,%20where.md) 
+	- [Nested and inner classes](Nested%20and%20inner%20classes.md)
+	- [Enum classes](Enum%20classes.md)
+	- [Inline value classes](Inline%20value%20classes.md)
+	- [Object expressions and declarations](Object%20expressions%20and%20declarations.md) 
+	- [Delegation](Delegation.md)
 	- Delegated properties
 	- Type aliases
 - Functions
