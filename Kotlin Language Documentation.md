@@ -1,11 +1,11 @@
 - Types
 	- Basic types
-		- Overview
-		- Numbers
-		- Unsigned integer types
-		- Booleans
-		- Characters
-		- Strings
+		- [Overview](Overview.md)
+		- [Numbers](Numbers.md)
+		- [Unsigned integer types](Unsigned%20integer%20types.md)
+		- [Booleans](Booleans.md)
+		- [Characters](Characters.md)
+		- [Strings](Strings.md)
 		- Arrays
 	- Type checks and casts
 - Control flow
@@ -29,8 +29,8 @@
 	- [Inline value classes](Inline%20value%20classes.md)
 	- [Object expressions and declarations](Object%20expressions%20and%20declarations.md) 
 	- [Delegation](Delegation.md)
-	- Delegated properties
-	- Type aliases
+	- [Delegated properties](Delegated%20properties.md)
+	- [Type aliases](Type%20aliases.md)
 - Functions
 	- Functions
 	- Lambdas
