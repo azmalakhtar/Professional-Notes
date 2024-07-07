@@ -15,25 +15,26 @@
               "type": "markdown",
               "state": {
                 "file": "Home.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "pinned": true
             }
           },
           {
-            "id": "aee9ede95696f6fd",
+            "id": "27502e28bcdbd775",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kotlin Language Documentation.md",
+                "file": "Classic Problems of Synchronization.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,8 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "543f6a9f9921fc3b",
@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home.md",
+                "file": "Classic Problems of Synchronization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Home.md",
+                "file": "Classic Problems of Synchronization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home.md"
+                "file": "Classic Problems of Synchronization.md"
               }
             }
           }
@@ -161,34 +161,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9cfe5507d5f80db7",
+  "active": "27502e28bcdbd775",
   "lastOpenFiles": [
+    "Home.md",
+    "Classic Problems of Synchronization.md",
+    "Enum classes.md",
+    "Functions.md",
+    "Android Project.md",
+    "Android Development Roadmap.md",
     "Kotlin Language Documentation.md",
+    "Data Structures & Algorithms.md",
+    "Type checks and casts.md",
+    "Data Structures & Algorithms - Problems.md",
+    "DSA$1 237. Delete Node in a Linked List.md",
+    "Arrays.md",
+    "Numbers.md",
+    "SJF & SRTF CPU Scheduling Algorithms.md",
     "Strings.md",
     "Booleans.md",
     "Characters.md",
-    "Home.md",
     "Unsigned integer types.md",
-    "Numbers.md",
     "Overview.md",
     "Type aliases.md",
-    "Data Structures & Algorithms - Problems.md",
     "Classes.md",
     "Data Structures & Algorithms Love Babbar.md",
     "Delegated properties.md",
     "Peterson's Solution.md",
     "Object expressions and declarations.md",
     "Delegation.md",
-    "Semaphores.md",
-    "Hardware Instructions.md",
-    "Inline value classes.md",
-    "Functional (SAM) interfaces.md",
-    "Enum classes.md",
-    "Nested and inner classes.md",
-    "Sealed classes and interfaces.md",
-    "Generics in, out, where.md",
-    "Data classes.md",
-    "Data Classes Atomic.md",
     "Attachments/peterson-solution-reorder.png",
     "Attachments/too-much-milk-os.png",
     "Attachments/pipes-ipc-os.webp",

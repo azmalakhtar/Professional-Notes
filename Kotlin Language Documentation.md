@@ -6,8 +6,8 @@
 		- [Booleans](Booleans.md)
 		- [Characters](Characters.md)
 		- [Strings](Strings.md)
-		- Arrays
-	- Type checks and casts
+		- [Arrays](Arrays.md)
+	- [Type checks and casts](Type%20checks%20and%20casts.md)
 - Control flow
 	- Conditions and loops
 	- Returns and jumps
@@ -32,7 +32,7 @@
 	- [Delegated properties](Delegated%20properties.md)
 	- [Type aliases](Type%20aliases.md)
 - Functions
-	- Functions
+	- [Functions](Functions.md)
 	- Lambdas
 	- Inline functions
 	- Operator overloading
