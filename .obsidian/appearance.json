@@ -1,7 +1,11 @@
 {
   "accentColor": "",
-  "cssTheme": "Things",
+  "cssTheme": "Typewriter",
   "interfaceFontFamily": "Mononoki Nerd Font",
   "textFontFamily": "Noto Sans,Calibri",
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "extended-colorscheme"
+  ],
+  "monospaceFontFamily": "Mononoki Nerd Font"
 }

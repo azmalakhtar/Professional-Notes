@@ -1,7 +1,7 @@
 > Generics create parameterized types: components that work across multiple types.
 
 To define a generic type, add angle brackets(`<>`) containing one or more generic placeholders and put this generic specification after the class name. This placeholder now can be used as normal type in the class i.g. return types, parameter types etc.
-```kt
+```kotlin
 class Holder<T>(private val data: T) {
     fun getData(): T = data
 }
