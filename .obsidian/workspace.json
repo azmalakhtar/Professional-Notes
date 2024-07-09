@@ -22,13 +22,13 @@
             }
           },
           {
-            "id": "72fe71df9c1ee340",
+            "id": "9704093ef73a6ba8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Process Creation.md",
-                "mode": "preview",
+                "file": "Playground.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Process Creation.md",
+                "file": "Playground.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Process Creation.md",
+                "file": "Playground.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Process Creation.md"
+                "file": "Playground.md"
               }
             }
           }
@@ -161,34 +161,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "72fe71df9c1ee340",
+  "active": "9704093ef73a6ba8",
   "lastOpenFiles": [
-    "Operating System Mindmatrix.md",
     "Home.md",
+    "Untitled.md",
+    "User level & Kernel level Threads, PYQs.md",
+    "Welcome - Azmal.md",
+    "Visibility modifiers.md",
+    "What is OS and Why we need it?.md",
+    "when Expressions.md",
+    "XYZ.md",
+    "Calculator App.md",
+    "Booleans.md",
+    "Arrays.md",
+    "Android Roadmap.md",
+    "Android Project.md",
+    "4 Pillars of OOPs Concept - Inheritance, Polymorphism, Encapsulation & Abstraction.md",
+    "Android Basics With Kotlin.md",
+    "Android Compose Projects.md",
+    "Process Creation.md",
+    "Operating System Mindmatrix.md",
     "DSA$1 237. Delete Node in a Linked List.md",
     "OOPs Concepts in C++.md",
     "Data Structures & Algorithms Love Babbar.md",
     "Data Structures & Algorithms - Problems.md",
-    "Android Roadmap.md",
-    "Android Basics With Kotlin.md",
     "Android Development.md",
     "Introduction to Generics.md",
     "Atomic Kotlin.md",
-    "Android Project.md",
     "Android Development Roadmap.md",
-    "Android Compose Projects.md",
-    "Calculator App.md",
-    "4 Pillars of OOPs Concept - Inheritance, Polymorphism, Encapsulation & Abstraction.md",
-    "Playground.md",
-    "Classic Problems of Synchronization.md",
-    "Semaphores.md",
-    "Functional (SAM) interfaces.md",
-    "Kotlin Language Documentation.md",
-    "Strings.md",
-    "Object expressions and declarations.md",
-    "break & continue.md",
-    "Enum classes.md",
-    "Functions.md",
     "Attachments/peterson-solution-reorder.png",
     "Attachments/too-much-milk-os.png",
     "Attachments/pipes-ipc-os.webp",
