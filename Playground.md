@@ -36,3 +36,11 @@ This ==has a highlight== in it.
 > [!warning]
 > Warning
 
+
+```c
+int main() {
+	printf("hello");
+}
+```
+
+Inline code `int`. 

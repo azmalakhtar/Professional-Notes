@@ -10,7 +10,7 @@
 	- Message Passing
 	- Pipes
 ### Shared Memory
-![message-passing-ipc-os](Attachments/message-passing-ipc-os.webp)
+![shared-memory-ipc-os](Attachments/shared-memory-ipc-os.webp)
 - In the shared-memory model, a region of memory that is shared by cooperating processes is established.
 - Processes can then exchange information by reading and writing data to the shared region.
 - Shared memory is created in the user space.
@@ -23,7 +23,7 @@
 - To create shared memory, we need OS support(system call), but once it is created then we don't require OS support because shared memory is in user space.
 - We use `shmget()` & `shmat()` system calls for shared memory.
 - Where is this shared memory located?
-	- Is is in the physical memory(RAM) but it is neither present in the stack nor in the heap of a process. So, it is created separately.
+	- It is in the physical memory(RAM) but it is neither present in the stack nor in the heap of a process. So, it is created separately.
 
 ### Message Passing
 ![message-passing-ipc-os](Attachments/message-passing-ipc-os.webp)
@@ -52,7 +52,7 @@
 - Let initial x = 0
 - Machine Language Code for P
 	- reg1 = count
-	- reg1 = reg1 + 1
+	- reg1 = reg1 - 1
 	- count = reg1
 - Machine Language Code for C
 	- reg2 = count

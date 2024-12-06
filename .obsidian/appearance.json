@@ -1,11 +1,13 @@
 {
   "accentColor": "",
-  "cssTheme": "Typewriter",
-  "interfaceFontFamily": "Mononoki Nerd Font",
-  "textFontFamily": "Noto Sans,Calibri",
-  "baseFontSize": 16,
+  "cssTheme": "Things",
+  "interfaceFontFamily": "Consolas",
+  "textFontFamily": "Consolas",
+  "baseFontSize": 18,
   "enabledCssSnippets": [
     "extended-colorscheme"
   ],
-  "monospaceFontFamily": "Mononoki Nerd Font"
+  "monospaceFontFamily": "Consolas",
+  "theme": "obsidian",
+  "nativeMenus": false
 }
