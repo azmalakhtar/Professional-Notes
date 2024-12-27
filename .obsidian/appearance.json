@@ -1,13 +1,14 @@
 {
   "accentColor": "",
-  "cssTheme": "Things",
+  "cssTheme": "Material Gruvbox",
   "interfaceFontFamily": "Consolas",
   "textFontFamily": "Consolas",
-  "baseFontSize": 18,
+  "baseFontSize": 16,
   "enabledCssSnippets": [
     "extended-colorscheme"
   ],
-  "monospaceFontFamily": "Consolas",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font",
   "theme": "obsidian",
-  "nativeMenus": false
+  "nativeMenus": false,
+  "baseFontSizeAction": true
 }
