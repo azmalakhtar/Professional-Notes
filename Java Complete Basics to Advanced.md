@@ -33,6 +33,7 @@ You can create packages and import them. They allow you to avoid class name coll
 | `default`   | (if no modifier is specified) only within the same package. |
 | `protected` | only within the same package and subclasses.                |
 | `public`    | from any other class.                                       |
+
 A class can only be `default` or `public`. Member variables (constructor, variables, and methods) can have any of the four modifiers.
 Start with the most restrictive modifier and only change it if needed.
 
@@ -411,6 +412,158 @@ If we don't use the `synchronize` keyword on the `increment` method of `Counter`
 
 ### 7. Thread Communication
 Thread class have some methods which can change the state of the thread itself.
+
+
+### 8. Intro to Executor Service
+```java
+  public static void main(String[] args) throws InterruptedException {
+    Downloader d1 = new Downloader("http://google.com/", "book.pdf");
+    Downloader d2 = new Downloader("http://youtube.com/", "video.mp3");
+    Downloader d3 = new Downloader("http://linkedin.com/", "text.txt");
+
+    ExecutorService service = Executors.newFixedThreadPool(3);
+
+    service.submit(d1);
+    service.submit(d2);
+    service.submit(d3);
+    service.shutdown();
+  }
+```
+
+`ExecutorService` creates a fixed number of `Thread` and uses them to perform the `Runnable` task provided to the `submit()` method.
+
+### 10. Returning Futures
+For executing a task which returns a value, implement the `Callable` interface and call `get()` on the future returned by the `submit()` method.
+```java
+public class Driver {
+  public static void main(String[] args) throws InterruptedException {
+    long startTime = System.currentTimeMillis();
+    ExecutorService service = Executors.newFixedThreadPool(3);
+
+    Future<Integer> task1 = service.submit(new HeavyComputation());
+    Future<Integer> task2 = service.submit(new HeavyComputation());
+
+    try {
+      System.out.println(task1.get());
+      System.out.println(task2.get());
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    service.shutdown();
+
+    long endTime = System.currentTimeMillis();
+    System.out.printf("Total time taken: %d", (endTime - startTime));
+  }
+}
+
+class HeavyComputation implements Callable<Integer> {
+  @Override
+  public Integer call() throws Exception {
+    Thread.sleep(2000);
+    return -7;
+  }
+}
+```
+
+
+## 13. Functional Programming
+### 1. What is Functional Programming?
+- First class functions
+- Pure functions
+- Immutable data
+- Stateless
+- No side effects
+- Lazy evaluation
+
+### 2. Lambda Expression
+```java
+public class Driver {
+  public static void main(String[] args) {
+    Consumer<String> greet = (String x) -> System.out.printf("hello %s!\n", x);
+    Function<Integer, Integer> square = (Integer num) -> num * num;
+    BiFunction<Integer, Integer, Integer> sum = (Integer x, Integer y) -> x + y;
+    greet.accept("azmal");
+    System.out.println(square.apply(7));
+    System.out.println(sum.apply(16, 13));
+  }
+}
+```
+
+### 3. Stream
+You can consume a collection as a stream by calling the `stream()` method.
+
+### 4. Filtering & Reducing
+The intermediate is evaluated lazily, meaning it is evaluated when a terminal operation is called on the stream.
+#### `filter`
+```java
+public class Driver {
+  public static void main(String[] args) {
+    List<String> messages = List.of("What the fuck?", "Hey how is it going?", "Fuck you", "Meet me at 4:30", "Bye",
+        "Hey");
+
+    displayNonVulguarMessage(messages);
+  }
+
+  static void displayNonVulguarMessage(List<String> messages) {
+    messages.stream()
+        .filter((String msg) -> !(msg.contains("fuck") || msg.contains("Fuck")))
+        .forEach((String msg) -> System.out.println(msg));
+  }
+}
+```
+
+
+#### `reduce`
+```java
+public class Driver {
+  public static void main(String[] args) {
+    final int INITIAL_BALANCE = 100;
+    List<Integer> transactions = List.of(-30, 60, 40, -120, 100);
+
+    int finalBalance = transactions.stream()
+        .reduce(INITIAL_BALANCE, (a, b) -> a + b);
+
+    System.out.printf("Your final balance is %d\n", finalBalance);
+  }
+}
+```
+
+### 5. Functional Interfaces
+A functional interface has only one abstract method. However it can have multiple default or static method. (Single Abstract Method aka **SAM**)
+
+They are intended to be used with lambda expressions.
+
+`@FunctionalInterface` annotation is useful when trying to make a interface functional as it makes the intention of the interface clear to the compiler and generates an error when an annotated interface doesn't satisfy the conditions.
+
+Common examples -> `Predicate`, `Consumer`, `BinaryOperator`, `Runnable`, `Callable`, `Comparator` etc
+
+
+### 6. Method References
+We can pass the reference of a method which satisfy the types. We use `::` to reference the method.
+```java
+public class Driver {
+  public static void main(String[] args) {
+    List<Integer> ages = List.of(10, 12, 3, 14, 5, 14, 16, 45, 87, 3, 5, 86);
+
+    int oldest = ages.stream()
+        .reduce(Integer.MIN_VALUE, Math::max);
+    int youngest = ages.stream()
+        .reduce(Integer.MAX_VALUE, Math::min);
+
+    System.out.printf("The oldest among us is %d years old.\n", oldest);
+    System.out.printf("The youngest among us is %d years old.\n", youngest);
+  }
+}
+```
+
+### 7. Functional(Declarative) vs Structural(Imperative) Programming
+| Imperative Programming                                                                   | Declarative  Programming                                                                  |
+| ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Codes step by step instructions for how an executed program achieves the desired result. | You set the conditions that trigger the program execution to produce the desired results. |
+| Long and complex code.                                                                   | Less complex and require less code.                                                       |
+|                                                                                          |                                                                                           |
+
+### 8. Optional Class
 
 
 ---

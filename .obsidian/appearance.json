@@ -1,13 +1,13 @@
 {
   "accentColor": "",
   "cssTheme": "Material Gruvbox",
-  "interfaceFontFamily": "Consolas",
+  "interfaceFontFamily": "Ubuntu",
   "textFontFamily": "Consolas",
   "baseFontSize": 16,
   "enabledCssSnippets": [
     "extended-colorscheme"
   ],
-  "monospaceFontFamily": "JetBrainsMono Nerd Font",
+  "monospaceFontFamily": "Consolas",
   "theme": "obsidian",
   "nativeMenus": false,
   "baseFontSizeAction": true
