@@ -232,6 +232,174 @@ public class JournalEntryService {
 ### Step 5. Use the Service class inside controller.
 Then use the service class bean inside of your controller to handle the request.
 
+## 12. ResponseEntity in Spring Boot
+A HTTP status code is a three-digit numeric code returned by a web server as part of the response to an HTTP request made by a client. These status codes are used to convey information about the result or status of the requested operation.
+
+They are grouped into five categories based on the first digit.
+
+| Status Code | Type          |
+| ----------- | ------------- |
+| 1xx         | Informational |
+| 2xx         | Successful    |
+| 3xx         | Redirection   |
+| 4xx         | Client Error  |
+| 5xx         | Server Error  |
+
+In Spring you can use the `ResponseEntity<T>` class to modify the status code of the response.
+```java
+    @GetMapping("/id/{id}")
+    public ResponseEntity<JournalEntry> getJournalEntryById(@PathVariable ObjectId id) {
+        Optional<JournalEntry> journalEntry = journalEntryService.getEntryById(id);
+        if (journalEntry.isPresent()) {
+            return new ResponseEntity<>(journalEntry.get(), HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+```
+
+## 13. Project Lombok
+It generates boilerplate code for at compile time if you provide some annotations.
+### Step 1. Add dependency
+```xml
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.36</version>
+		<scope>provided</scope>
+	</dependency>
+
+```
+
+### Step 2. Annotate your class
+Annotate to indicate what code you want to produce.
+
+```java
+@Getter
+@Setter
+public class JournalEntry {
+    private ObjectId id;
+    private String title;
+    private String content;
+    private LocalDateTime dateTime;
+}
+```
+
+#### Additional Information
+If using IntelliJ download the lombok plugin.
+
+## 14. Relations in MongoDB
+While creating the entity class, add the `DBRef` annotation on the properties which you want to link to other collections.
+```java
+@Document("users")
+@Data
+public class User {
+    @Id
+    private ObjectId id;
+    @Indexed(unique = true)
+    @NonNull
+    private String userName;
+    @NonNull
+    private String password;
+    @DBRef
+    private List<JournalEntry> journalEntries = new ArrayList<>();
+}
+```
+If you want to index, add this line to your `application.properties` file
+```
+spring.data.mongodb.auto-index-creation=true
+```
+
+If you want to get an document based on one its field, declare a method inside the repository named `findBy<field-name>`.
+```java
+public interface UserRepository extends MongoRepository<User, ObjectId> {
+    User findByUserName(String username);
+}
+```
+
+`@DBRef` doesn't automatically saves or deletes the JournalEntry, you still need to do that manually.
+
+```java
+    public void saveEntry(JournalEntry journalEntry, String userName) {
+        journalEntry.setDateTime(LocalDateTime.now());
+        User user = userService.findByUserName(userName);
+        JournalEntry entry = journalEntryRepository.save(journalEntry);
+        user.getJournalEntries().add(entry);
+        userService.saveUser(user);
+    }
+
+```
+
+
+## 15. `@Transactional` Annotation in Spring Boot
+It is used to mark a function as atomic, either all statement executes successfully or none of them executes.
+
+### Step 1. Mark the function with `@Transactional`
+```java
+    @Transactional
+    public void saveEntry(JournalEntry journalEntry, String userName) {
+        journalEntry.setDateTime(LocalDateTime.now());
+        User user = userService.findByUserName(userName);
+        JournalEntry entry = journalEntryRepository.save(journalEntry);
+        user.getJournalEntries().add(entry);
+        userService.saveUser(user);
+    }
+```
+
+### Step 2. Enable Transaction Management
+Enable transaction management by marking a class as `@EnableTransactionManagement`.
+Then add a bean inside it which returns an instance of `PlatformTransactionManager`.
+
+```java
+@SpringBootApplication
+@EnableTransactionManagement
+public class JournalApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(JournalApplication.class, args);
+	}
+
+	@Bean
+	public PlatformTransactionManager addTransactionManager(MongoDatabaseFactory dbFactory) {
+		return new MongoTransactionManager(dbFactory);
+	}
+}
+```
+
+> [!error]
+> If you have only one instance of Mongo, then an error will be thrown because Transactions are done on a replica of the mongodb. 
+> ```
+> Command failed with error 20 (IllegalOperation): 'Transaction numbers are only allowed on a replica set member or mongos' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "Transaction numbers are only allowed on a replica set member or mongos", "code": 20, "codeName": "IllegalOperation"}
+> ```
+
+
+## 16. Connecting to MongoDB Atlas
+Add the connection string to the `application.properties`
+```
+spring.data.mongodb.uri=<connection-string>
+```
+
+
+## 18. Spring Security | `@EnableWebSecurity`
+Spring security is a framework that is used in spring boot to handle *authentication* and *authorization*.
+
+**Authentication**: The process of verifying a user's identity(e.g., username and password).
+**Authorization**: The process of granting or denying access to specific resources or actions based on the authenticated user's roles and permissions.
+
+### Step 1: Enable Spring Security
+Add the spring security dependency.
+```xml
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+```
+
+Adding spring security enable authentication for every request. To modify the security beahviour, config.
+
+### Step 2: Create a Custom Security Behaviour
+Create a custom config class that extends `WebSecurityConfigurerAdpater` class. Add the `@EnableWebSecurity` and `@Configuration` annotations. `@EnableWebSecurity` annotation tells Spring to use this instead of the default config.
+`WebSecurityConfigurerAdapter` is an utility class in Spring Security Framework that provides default configuration and allows customization of certain features. By extending it, you can configure and customize Spring Security for your application needs.
+
 ---
 ### References
 [Spring Boot Mastery: From Basics to Advanced](https://www.youtube.com/playlist?list=PLA3GkZPtsafacdBLdd3p1DyRd5FGfr3Ue)
