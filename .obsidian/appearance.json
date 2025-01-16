@@ -1,6 +1,6 @@
 {
   "accentColor": "",
-  "cssTheme": "Things",
+  "cssTheme": "Material Gruvbox",
   "interfaceFontFamily": "Ubuntu",
   "textFontFamily": "Consolas",
   "baseFontSize": 16,
@@ -8,7 +8,7 @@
     "extended-colorscheme"
   ],
   "monospaceFontFamily": "Consolas",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "nativeMenus": false,
   "baseFontSizeAction": true
 }
