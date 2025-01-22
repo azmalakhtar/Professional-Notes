@@ -63,7 +63,7 @@ By the end of the course, you will know everything you would need to become a gr
 - Step 12 - Quick Review - Important Spring Framework Concepts
 - Step 13 - Exploring Spring Big Picture - Framework, Modules and Projects
 
-### 5. Getting Started with Spring Boot
+### 5. [Getting Started with Spring Boot](Getting%20Started%20with%20Spring%20Boot.md)
 - Step 01 - Getting Started with Spring Boot - Goals
 - Step 02 - Understanding the World Before Spring Boot - 10000 Feet Overview
 - Step 03 - Setting up New Spring Boot Project with Spring Initializr
@@ -79,7 +79,7 @@ By the end of the course, you will know everything you would need to become a gr
 - Step 13 - Understanding Spring Boot vs Spring vs Spring MVC
 - Step 14 - Getting Started with Spring Boot - Review
 
-### 6. Getting Started with JPA and Hibernate with Spring and Spring Boot
+### 6. [Getting Started with JPA and Hibernate with Spring and Spring Boot](Getting%20Started%20with%20JPA%20and%20Hibernate%20with%20Spring%20and%20Spring%20Boot.md)
 - Step 01 - Getting Started with JPA and Hibernate - Goals
 - Step 02 - Setting up New Spring Boot Project for JPA and Hibernate
 - Step 03 - Launching up H2 Console and Creating Course Table in H2

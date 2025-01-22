@@ -40,31 +40,17 @@
             }
           },
           {
-            "id": "8b77952d760ca840",
+            "id": "cc3eb5cde73cc2b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploring Spring Framework Advanced Features.md",
+                "file": "Build Java Web Application with Spring Framework, Spring Boot and Hibernate.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exploring Spring Framework Advanced Features"
-            }
-          },
-          {
-            "id": "b8cfee99c2208943",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java Complete Basics to Advanced.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Java Complete Basics to Advanced"
+              "title": "Build Java Web Application with Spring Framework, Spring Boot and Hibernate"
             }
           }
         ],
@@ -124,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "543f6a9f9921fc3b",
@@ -209,14 +196,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b77952d760ca840",
+  "active": "cc3eb5cde73cc2b8",
   "lastOpenFiles": [
+    "Attachments/Spring-MVC-Flow-Diagram.png",
+    "Getting Started with Spring Boot.md",
     "Master Spring Boot 3 & Spring Framework 6 with Java.md",
-    "Java Complete Basics to Advanced.md",
-    "Exploring Spring Framework Advanced Features.md",
-    "Using Spring Framework to Create and Manage Your Java Objects.md",
+    "Build Java Web Application with Spring Framework, Spring Boot and Hibernate.md",
+    "Getting Started with JPA and Hibernate with Spring and Spring Boot.md",
     "Getting Started with Java Spring Framework.md",
     "Data Structures & Algorithms - Problems.md",
+    "Data Structures & Algorithms Love Babbar.md",
+    "Exploring Spring Framework Advanced Features.md",
+    "Java Complete Basics to Advanced.md",
+    "Using Spring Framework to Create and Manage Your Java Objects.md",
     "Spring Boot Mastery.md",
     "4 Pillars of OOPs Concept - Inheritance, Polymorphism, Encapsulation & Abstraction.md",
     "Advent of Neovim.md",
@@ -232,11 +224,6 @@
     "Fleeting Notes/Impact of Internet on Education System.md",
     "Atlas/Operating System Concepts Galvin.md",
     "Atlas/Health.md",
-    "Atlas/Computer Science.md",
-    "Atlas/Mark Manson.md",
-    "Atlas/Lewis Howes.md",
-    "Atlas/Glucose Goddess.md",
-    "Atlas/Erich Fromm.md",
     "Attachments/peterson-solution-reorder.png",
     "Attachments/too-much-milk-os.png",
     "Attachments/pipes-ipc-os.webp",
