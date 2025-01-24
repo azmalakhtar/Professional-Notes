@@ -93,7 +93,7 @@ By the end of the course, you will know everything you would need to become a gr
 - Step 11 - Exploring features of Spring Data JPA
 - Step 12 - Understanding difference between Hibernate and JPA
 
-### 7. Build Java Web Application with Spring Framework, Spring Boot and Hibernate
+### 7. [Build Java Web Application with Spring Framework, Spring Boot and Hibernate](Build%20Java%20Web%20Application%20with%20Spring%20Framework,%20Spring%20Boot%20and%20Hibernate.md)
 - Step 00 - Introduction to Building Web App with Spring Boot
 - Step 01 - Creating Spring Boot Web Application with Spring Initializr
 - Step 02 - Quick overview of Spring Boot Project

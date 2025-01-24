@@ -166,6 +166,151 @@ You can access the form data the same way you access query parameters, using `@R
 By default the values put in the `ModelMap` are in request scopes. The values of type request scope are available only for that request. While the values inside the session scope survives the whole session.
 To make a attribute session scoped, add the `@SessionAttributes(<attribute-name>)` annotation on all the controllers.
 
+# 17. Adding JSTL to Spring Boot
+## Step 1. Add the dependency
+```xml
+		<dependency>
+			<groupId>jakarta.servlet.jsp.jstl</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>glassfish-jstl</artifactId>
+			<version>11.0.24</version>
+		</dependency>
+```
+
+## Step 2. Add the tag
+Before using jstl, you need to add a tag inside your jsp files indicating which functunalities you want to import
+```jsp
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+```
+
+## Step 3. Use the JSTL
+```jsp
+        <tbody>
+            <c:forEach items="${todos}" var="todo">
+                <tr>
+                    <td>${todo.id}</td>
+                    <td>${todo.description}</td>
+                    <td>${todo.targetDate}</td>
+                    <td>${todo.done}</td>
+                </tr>
+            </c:forEach>
+        </tbody>
+```
+
+# 18. Adding Bootstrap
+## Step 1. Add the Dependency
+Bootstrap has a dependency on jquery, so you also need to include that.
+```xml
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>5.1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>3.6.0</version>
+		</dependency>
+```
+
+## Step 2. Refer to the files.
+```html
+    <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="webjars/jquery/3.6.0/jquery.min.js"></script>
+```
+
+# 21. 
+You can also use `ModelMap` to retrieve values. To redirect to a different endpoint, return the `redirect:/<end-point>` from the method.
+```java
+	@RequestMapping(value = "add-todo", method = RequestMethod.POST)
+	public String addTodo(@RequestParam String description, @RequestParam String targetDate, ModelMap model) {
+		todoService.addTodo((String) model.get("name"), description, targetDate);
+		return "redirect:/list-todos";
+	}
+```
+
+# 22. Spring Boot Validation
+## Step 1. Add Dependency
+```xml
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+```
+
+## Step 2. Create Two Way Binding
+Create a two form binding. This means binding form to an object. Binding object properties to the input fields. 
+It serves two purposes:
+1. When the page (and form) is loaded, the `input` values are populated based on the object passed to the `ModelMap`.
+2. When the form is submitted, the modified `input` values are then used to populate the object used in another endpoint as a parameter.
+
+To create two way binding you need to import form tag libraray.
+```jsp
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+```
+
+
+`modelAttribute` - the model attribute(key) whose properties should be accessed.
+`path` - the property name
+```jsp
+<form:form method="post" modelAttribute="todo">
+	Description: <form:input type="text" path="description" required="required"/>
+	<form:input type="hidden" path="id"/>
+	<form:input type="hidden" path="done"/>
+	<input type="submit" class="btn btn-success"/>
+</form:form>
+```
+
+In the endpoint, which first loads the `jsp`, you need to pass the object, which will be used inside the `jsp` to populate the `input`.
+```java
+@RequestMapping(value = "add-todo", method = RequestMethod.GET)
+public String getAddTodoPage(ModelMap model) {
+	String username = (String) model.get("name");
+	Todo todo = new Todo(0, username, "", LocalDate.now().plusYears(1), false);
+	model.put("todo", todo);
+	return "add-todo";
+}
+```
+
+In the endpoint in which you will use the `input` value, add a parameter on the method.
+```java
+@RequestMapping(value = "add-todo", method = RequestMethod.POST)
+public String addTodo(ModelMap model, Todo todo) {
+	System.out.println(todo);
+	todoService.addTodo((String) model.get("name"), todo.getDescription());
+	return "redirect:/list-todos";
+}
+```
+
+## Step 3. Add Validation
+You add validation directly on the properties of the class which you use in two-way-binding. The `message` is used to display errors on the `jsp`.
+```java
+@Size(min = 10, message = "Enter atleast 10 characters.")
+private String description;
+```
+
+If the user fails this validation, then an error page is shown as result. If you don't want to show the error page and instead want to do some other logic, declare a `BindingResult` parameter on the method (at the end).
+```java
+@RequestMapping(value = "add-todo", method = RequestMethod.POST)
+public String addTodo(ModelMap model, @Valid Todo todo, BindingResult result) {
+	if (result.hasErrors()) {
+		return "add-todo";
+	}
+	todoService.addTodo((String) model.get("name"), todo.getDescription());
+	return "redirect:/list-todos";
+}
+```
+
+If you want to show the `message` to the user, add the `form:errors` tag inside the `jsp`. Inside the form-tags, to specify a class, you need to use `cssClass` instead of the `class`.
+```jsp
+Description: <form:input type="text" path="description" required="required"/>
+	<form:errors path="description" cssClass="text-warning"/>
+```
+
 ---
 ### References
 - [Master Spring Boot 3 & Spring Framework 6 with Java](Master%20Spring%20Boot%203%20&%20Spring%20Framework%206%20with%20Java.md)
