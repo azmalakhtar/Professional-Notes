@@ -1,9 +1,9 @@
 {
   "accentColor": "",
   "cssTheme": "Material Gruvbox",
-  "interfaceFontFamily": "Ubuntu",
+  "interfaceFontFamily": "Consolas",
   "textFontFamily": "Consolas",
-  "baseFontSize": 16,
+  "baseFontSize": 18,
   "enabledCssSnippets": [
     "extended-colorscheme"
   ],

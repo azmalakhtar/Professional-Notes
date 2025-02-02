@@ -311,6 +311,97 @@ Description: <form:input type="text" path="description" required="required"/>
 	<form:errors path="description" cssClass="text-warning"/>
 ```
 
+# 27. Add Target Date
+JSP automatically translates date string to `LocalDate` & vice-versa.
+
+To group elements related to a single path, you can use `fieldset`.
+```jsp
+<fieldset class="mb-3">
+	<form:label path="description">Description</form:label>
+	<form:input type="text" path="description" required="required"/>
+	<form:errors path="description" cssClass="text-warning"/>
+</fieldset>
+```
+
+## Bootstrap Datepicker
+### Step 1. Dependency
+```xml
+<dependency>
+	<groupId>org.webjars</groupId>
+	<artifactId>bootstrap-datepicker</artifactId>
+	<version>1.9.0</version>
+</dependency>
+```
+
+### Step 2. Link the page to datepicker
+Link to the static resources provided by the datepicker (`css` & `js` files).
+CSS file.
+```html
+<link href="webjars/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet">
+```
+
+Javascript file.
+```html
+<script src="webjars/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+```
+
+### Step 3. Configure datepicker
+Specify on which element, the datepicker should be opened.
+```html
+<script type="text/javascript">
+	$('#targetDate').datepicker({
+		format: 'yyyy-mm-dd'
+	});
+</script>
+```
+
+# 28. JSP Fragments
+You can create jsp fragments. which you can include in other jsp files.
+A jsp fragment has a file type `jspf`.
+To include a jsp fragment inside a jsp file, 
+```jsp
+<%@ include file="common/header.jspf" %>
+<%@ include file="common/navigation.jspf" %>
+```
+
+
+# 30. Setting up Spring Security
+Include the dependency in your `pom.xml` file.
+```xml
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+```
+
+By default, the spring security protects your app by making it mandatory to login if you want to access any endpoint. The username is `user` and the generated password is shown inside the terminal from where you run the app.
+
+# 31. Configuring Spring Security with Custom User and Password Encoder
+Create a configuration file. Inside it create a bean which will return a UserDetailsManager.
+```java
+@Configuration
+public class SpringSecurityConfiguration {
+	@Bean
+	public InMemoryUserDetailsManager createUserDetails() {
+		Function<String, String> passwordEncoder = input -> passwordEncoder().encode(input);
+		UserDetails userDetails = User.builder()
+			.passwordEncoder(passwordEncoder)
+			.username("azmal")
+			.password("pwd")
+			.roles("USER", "ADMIN")
+			.build();
+
+		return new InMemoryUserDetailsManager(userDetails);
+	}
+
+	@Bean
+	public PasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
+}
+```
+
 ---
 ### References
 - [Master Spring Boot 3 & Spring Framework 6 with Java](Master%20Spring%20Boot%203%20&%20Spring%20Framework%206%20with%20Java.md)
