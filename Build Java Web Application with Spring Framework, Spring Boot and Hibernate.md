@@ -17,28 +17,28 @@ public class SayHelloController {
 # 4. 
 You can use `StringBuffer` to build strings.
 ```java
-		StringBuffer buffer = new StringBuffer();
+StringBuffer buffer = new StringBuffer();
 
-		buffer.append("<html>");
-		buffer.append("<head>");
-		buffer.append("<title>First Web Page</title>");
-		buffer.append("</head>");
-		buffer.append("<body>");
-		buffer.append("<h1>Hello! What are you learning?</h1>");
-		buffer.append("</body>");
-		buffer.append("</html>");
+buffer.append("<html>");
+buffer.append("<head>");
+buffer.append("<title>First Web Page</title>");
+buffer.append("</head>");
+buffer.append("<body>");
+buffer.append("<h1>Hello! What are you learning?</h1>");
+buffer.append("</body>");
+buffer.append("</html>");
 
-		return buffer.toString();
+return buffer.toString();
 ```
 
 # 5. Redirect to a JSP using Spring Boot
 ## Step 1. Add the dependency
 ```xml
-		<dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
-			<scope>provided</scope>
-		</dependency>
+<dependency>
+	<groupId>org.apache.tomcat.embed</groupId>
+	<artifactId>tomcat-embed-jasper</artifactId>
+	<scope>provided</scope>
+</dependency>
 ```
 
 ## Step 2. Create a JSP File
@@ -55,30 +55,30 @@ spring.mvc.view.suffix=.jsp
 ## Step 4. Create the endpoint
 Return the jsp file name from the endpoint.
 ```java
-	@RequestMapping("say-hello-jsp")
-	public String sayHelloJsp() {
-		return "sayHello";
-	}
+@RequestMapping("say-hello-jsp")
+public String sayHelloJsp() {
+	return "sayHello";
+}
 ```
 
 # 8. QueryParams and Model
 To capture query parameters, add a parameter with the same name as query parameter and add the `@RequestParam`.
 ```java
-	// login?name=something
-	@RequestMapping("login")
-	public String goToLoginPage(@RequestParam String name) {
-		System.out.println("REQ PARAM: " + name);
-		return "login";
-	}
+// login?name=something
+@RequestMapping("login")
+public String goToLoginPage(@RequestParam String name) {
+	System.out.println("REQ PARAM: " + name);
+	return "login";
+}
 ```
 
 To dynamically pass values to a jsp, use the `ModelMap`. Add a parameter of `ModelMap` on the endpoint method and then put the values inside this map.
 ```java
-	@RequestMapping("login")
-	public String goToLoginPage(@RequestParam String name, ModelMap map) {
-		map.put("name", name.toUpperCase());
-		return "login";
-	}
+@RequestMapping("login")
+public String goToLoginPage(@RequestParam String name, ModelMap map) {
+	map.put("name", name.toUpperCase());
+	return "login";
+}
 ```
 
 To access the provided value in a `jsp` file, use the `${<key>}`.
@@ -131,12 +131,6 @@ Spring way of implementing the Model 2 Architecture - Front Controller.
 <html>
 <head>
     <title>Login Page</title>
-<style>
-    * {
-        background-color: black;
-        color: white;
-        }
-</style>
 </head>
 <body>
     Welcome to the login page!
@@ -154,12 +148,12 @@ On the other hand if you use `POST` method, form data is not sent as the query p
 
 You can access the form data the same way you access query parameters, using `@RequestParam` annotation.
 ```java
-	@RequestMapping(value = "login", method = RequestMethod.POST)
-	public String gotoWelcomePage(@RequestParam String name, @RequestParam String password, ModelMap model) {
-		model.put("name", name);
-		model.put("password", password);
-		return "welcome";
-	}
+@RequestMapping(value = "login", method = RequestMethod.POST)
+public String gotoWelcomePage(@RequestParam String name, @RequestParam String password, ModelMap model) {
+	model.put("name", name);
+	model.put("password", password);
+	return "welcome";
+}
 ```
 
 # 16. Session vs Request Scopes
@@ -169,15 +163,15 @@ To make a attribute session scoped, add the `@SessionAttributes(<attribute-name>
 # 17. Adding JSTL to Spring Boot
 ## Step 1. Add the dependency
 ```xml
-		<dependency>
-			<groupId>jakarta.servlet.jsp.jstl</groupId>
-			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.jetty</groupId>
-			<artifactId>glassfish-jstl</artifactId>
-			<version>11.0.24</version>
-		</dependency>
+<dependency>
+	<groupId>jakarta.servlet.jsp.jstl</groupId>
+	<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+</dependency>
+<dependency>
+	<groupId>org.eclipse.jetty</groupId>
+	<artifactId>glassfish-jstl</artifactId>
+	<version>11.0.24</version>
+</dependency>
 ```
 
 ## Step 2. Add the tag
@@ -188,58 +182,58 @@ Before using jstl, you need to add a tag inside your jsp files indicating which 
 
 ## Step 3. Use the JSTL
 ```jsp
-        <tbody>
-            <c:forEach items="${todos}" var="todo">
-                <tr>
-                    <td>${todo.id}</td>
-                    <td>${todo.description}</td>
-                    <td>${todo.targetDate}</td>
-                    <td>${todo.done}</td>
-                </tr>
-            </c:forEach>
-        </tbody>
+<tbody>
+	<c:forEach items="${todos}" var="todo">
+		<tr>
+			<td>${todo.id}</td>
+			<td>${todo.description}</td>
+			<td>${todo.targetDate}</td>
+			<td>${todo.done}</td>
+		</tr>
+	</c:forEach>
+</tbody>
 ```
 
 # 18. Adding Bootstrap
 ## Step 1. Add the Dependency
 Bootstrap has a dependency on jquery, so you also need to include that.
 ```xml
-		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>bootstrap</artifactId>
-			<version>5.1.3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>jquery</artifactId>
-			<version>3.6.0</version>
-		</dependency>
+<dependency>
+	<groupId>org.webjars</groupId>
+	<artifactId>bootstrap</artifactId>
+	<version>5.1.3</version>
+</dependency>
+<dependency>
+	<groupId>org.webjars</groupId>
+	<artifactId>jquery</artifactId>
+	<version>3.6.0</version>
+</dependency>
 ```
 
 ## Step 2. Refer to the files.
 ```html
-    <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <script src="webjars/jquery/3.6.0/jquery.min.js"></script>
+<link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+<script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+<script src="webjars/jquery/3.6.0/jquery.min.js"></script>
 ```
 
 # 21. 
 You can also use `ModelMap` to retrieve values. To redirect to a different endpoint, return the `redirect:/<end-point>` from the method.
 ```java
-	@RequestMapping(value = "add-todo", method = RequestMethod.POST)
-	public String addTodo(@RequestParam String description, @RequestParam String targetDate, ModelMap model) {
-		todoService.addTodo((String) model.get("name"), description, targetDate);
-		return "redirect:/list-todos";
-	}
+@RequestMapping(value = "add-todo", method = RequestMethod.POST)
+public String addTodo(@RequestParam String description, @RequestParam String targetDate, ModelMap model) {
+	todoService.addTodo((String) model.get("name"), description, targetDate);
+	return "redirect:/list-todos";
+}
 ```
 
 # 22. Spring Boot Validation
 ## Step 1. Add Dependency
 ```xml
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-validation</artifactId>
-		</dependency>
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
 ```
 
 ## Step 2. Create Two Way Binding
@@ -401,6 +395,93 @@ public class SpringSecurityConfiguration {
 	}
 }
 ```
+
+# 32. Authentication Details from Security
+You can use the `SecurityContextHolder` to get the context and from the context, you can get the `Authentication`.
+```java
+private String getLoggedInUsername() {
+	Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+	return authentication.getName();
+}
+```
+
+# 34. JPA and H2 Database
+Add the following dependencies to the `pom.xml` file.
+```xml
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+<dependency>
+	<groupId>com.h2database</groupId>
+	<artifactId>h2</artifactId>
+	<scope>runtime</scope>
+</dependency>
+```
+
+You can visit the h2 console on the `/h2-console` endpoint. It will require a `JDBC URL`, which is printed in the terminal. To specify a `JDBC URL`, add the following to `application.properties` file.
+```properties
+spring.datasource.url=jdbc:h2:mem:testdb
+```
+
+# 35. Configure Spring Security to get H2 Console working
+By default, spring security applies the following filters to the requests
+- All URLs are protected.
+- A login form is shown for unauthorized requests.
+
+But to get H2 console working, we need to apply two more filters:
+- Disable `csrf`
+- Enable frames (by disabling the `X-Frame-Options`)
+
+TO modify the filters, we need to create a bean of type `SecurityFilterChain` in our security configuration class and specify the filters we want to apply.
+```java
+@Bean
+public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+	http.authorizeHttpRequests(
+		auth -> auth.anyRequest().authenticated()
+	);
+	http.formLogin(withDefaults());
+	http.csrf().disable();
+	http.headers().frameOptions().disable();
+
+	return http.build();
+}
+```
+
+# 36. Make Todo an Entity and Populate H2 Database
+To execute queries on the H2 database at the time of application start-up, create a `data.sql` file containing the queries, under the `resources` folder.
+```sql
+insert into todo (ID, USERNAME, DESCRIPTION, TARGET_DATE, DONE)
+values (1001, 'azmal', 'Get React Certified', CURRENT_DATE(), false);
+
+insert into todo (ID, USERNAME, DESCRIPTION, TARGET_DATE, DONE)
+values (1002, 'azmal', 'Get Spring Certified', CURRENT_DATE(), false);
+
+insert into todo (ID, USERNAME, DESCRIPTION, TARGET_DATE, DONE)
+values (1003, 'azmal', 'Get Spring Boot Certified', CURRENT_DATE(), false);
+
+insert into todo (ID, USERNAME, DESCRIPTION, TARGET_DATE, DONE)
+values (1004, 'azmal', 'Get Golang Certified', CURRENT_DATE(), false);
+```
+
+
+By default, the queries specified in `data.sql` are executed before the `@Entity`s are scanned and the table corresponding to the `@Entity` is created. Thus, the above code will through an exception.
+
+To initialize the tables before executing the queries, add the following to the `application.properties`.
+```properties
+spring.jpa.defer-datasource-initialization=true
+```
+
+# 38. Display Queries in Terminal
+Add the following to the `application.properties`.
+```properties
+spring.jpa.show-sql=true
+```
+
+# 39 - 41 {Optional} Connect to MySQL Database
+#skipped
+
 
 ---
 ### References

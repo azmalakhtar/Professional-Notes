@@ -139,7 +139,7 @@ By the end of the course, you will know everything you would need to become a gr
 - Step 40 - OPTIONAL - Installing Docker
 - Step 41 - OPTIONAL - Connecting Todo App to MySQL database
 
-### 8. Creating a Java REST API with Spring Boot, Spring Framework and Hibernate
+### 8. [Creating a Java REST API with Spring Boot, Spring Framework and Hibernate](Creating%20a%20Java%20REST%20API%20with%20Spring%20Boot,%20Spring%20Framework%20and%20Hibernate.md)
 - Step 00 - Creating a REST API with Spring Boot - An Overview
 - Step 01 - Initializing a REST API Project with Spring Boot
 - Step 02 - Creating a Hello World REST API with Spring Boot

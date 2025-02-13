@@ -3,7 +3,7 @@
   "cssTheme": "Material Gruvbox",
   "interfaceFontFamily": "Consolas",
   "textFontFamily": "Consolas",
-  "baseFontSize": 18,
+  "baseFontSize": 16,
   "enabledCssSnippets": [
     "extended-colorscheme"
   ],
