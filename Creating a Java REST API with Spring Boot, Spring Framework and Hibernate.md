@@ -439,6 +439,75 @@ Dependecny
 </dependency>
 ```
 
+# 30. Many-To-One Relationship in JPA
+To create a many to one relationship.
+Crete the `Entity` which will be "many", in this example a `Post`. Inside it create a field of the type "one", in this case `User` & annotate it with `@ManyToOne`.
+```java
+@Entity
+public class Post {
+	@Id
+	@GeneratedValue
+	private Integer id;
+	private String description;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JsonIgnore
+	private User user;
+	// code...
+}
+```
+
+Inside the one type, create a field of `List` of many type and annotate it with `@OneToMany(mappedBy = <field-name>`, passing in the field name which one has in the many type.
+```java
+@Entity(name = "user_details")
+public class User {
+	@Id
+	@GeneratedValue
+	private Integer id;
+	@Size(min = 2, message = "Name should be atleast 2 characters long.")
+	@NotBlank
+	private String name;
+	@Past(message = "Birth Date should be in the past")
+	private LocalDate birthDate;
+
+	@OneToMany(mappedBy = "user")
+	@JsonIgnore
+	private List<Post> posts;
+}
+```
+
+The `Post` schema in JPA will have a `user_id` field of type `Integer`. This will contain the id of the `User` that this `Post` belongs to.
+
+## Interacting with the data
+```java
+@GetMapping("/users/{id}/posts")
+public List<Post> retrieveAllPostOfUser(@PathVariable Integer id) {
+	User user = service.findOne(id);
+
+	if (user == null) {
+		throw new UserNotFoundException("id:" + id);
+	}
+
+	return user.getPosts();
+}
+
+@PostMapping("/users/{id}/posts")
+public ResponseEntity<Object> createPostForUser(@PathVariable Integer id, @Valid @RequestBody Post post) {
+	User user = service.findOne(id);
+	if (user == null) {
+		throw new UserNotFoundException("id:" + id);
+	}
+
+	post.setUser(user);
+	Post savedPost = postRepository.save(post);
+
+	URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
+			.buildAndExpand(savedPost.getId())
+			.toUri();
+	return ResponseEntity.created(location).build();
+}
+```
+
+
 
 ---
 ### References
