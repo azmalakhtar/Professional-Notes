@@ -1,9 +1,9 @@
 {
   "accentColor": "",
   "cssTheme": "Material Gruvbox",
-  "interfaceFontFamily": "Consolas",
-  "textFontFamily": "Consolas",
-  "baseFontSize": 16,
+  "interfaceFontFamily": "Monaspace Argon Frozen",
+  "textFontFamily": "Monaspace Argon Frozen,Monaspace Argon,Monaspace Neon,Monaspace Xenon,Monaspace Radon,Monaspace Krypton",
+  "baseFontSize": 12,
   "enabledCssSnippets": [
     "extended-colorscheme"
   ],
